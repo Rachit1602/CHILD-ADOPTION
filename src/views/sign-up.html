@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All about js</title>
+    <title>SignUp</title>
     <!-- <link rel="stylesheet" href="css/astyle.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./style.css">
     <style>
         *{
             margin: 0px;
@@ -14,17 +17,18 @@
             font-family: 'Poppins',sans-serif;
         }
         body{
-            display: flex;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
             /* background:linear-gradient(135deg, #9cf0b4, #16a049); */
             background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(50,80,180,1) 45%, rgba(27,53,125,1) 100%);
         }
+        .contain{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80%;
+            margin: 5rem;
+        }
         .container{
-            max-width: 700px;
-            width: 100%;
+            width: 60%;
             background:#fff  ;
             padding: 25px 30px;
         }
@@ -98,41 +102,194 @@
         .name-wrap{
             width: 32%;
         }
+        * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+       background:linear-gradient(135deg, #9cf0b4, #16a049);
+       background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(50, 80, 180, 1) 45%,
+          rgba(27, 53, 125, 1) 100%
+        );
+      }
+      .container {
+        max-width: 650px;
+        width: 100%;
+        height: 100%;
+        background: aliceblue;
+        padding: 25px 30px;
+        border-radius: 0.75rem;
+      }
+      .container .tittle {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        position: relative;
+        text-align: center;
+        margin-bottom: 5rem;
+        color: #000;
+      }
+      .container .tittle::before {
+        content: "";
+        position: absolute;
+        left: 39.7%;
+        bottom: 0;
+        height: 0.25rem;
+        width: 5.2rem;
+        /* background: linear-gradient(135deg, #5ee784, #058c3d) ;  */
+        background: linear-gradient(
+          135deg,
+          rgb(79, 66, 218) 0%,
+          rgb(88, 82, 156) 34%,
+          rgb(120, 113, 194) 100%
+        );
+      }
+      .container form .upper-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px 0px 12px 0px;
+      }
+      form .upper-details .input-box {
+        margin-bottom: 30px;
+        /* width: calc(100% / 2 - 20px); */
+
+        
+      }
+      .upper-details .input-box .details {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        color: #000;
+      }
+      .upper-details .input-box input {
+        height: 45px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1.3px solid rgb(11, 12, 108);
+        padding-left: 15px;
+        font-size: 16px;
+        border-bottom-width: 2px;
+        transition: all 0.3px ease;
+        background-color: #fff;
+      }
+      .upper-details .input-box input:focus,
+      .upper-details .input-box input:valid {
+        border-color: #5b56bf;
+      }
+
+      .upper-details .input-box input:hover{
+         transform: translateY(3px);
+      }
+      .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2rem;
+      }
+      .button > input {
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(11, 12, 108);
+        color: #fff;
+        border: none;
+        width: 12rem;
+        height: 2rem;
+        border-radius: 14px;
+        font-size: medium;
+        box-shadow: 2px 2px 7px #5b56bf;
+       
+      }
+
+      .button > input:hover{
+        transform: translateY(5px);
+        box-shadow: 0 0 5px #4fa5d7;
+      }
+
+
+      .name {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .name-wrap {
+        width: 32%;
+      }
     </style>
     
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbar-brand my-2 mx-20""><img src="./img/logo/logo.png" alt=""></div>
+        <div class="navbar-wrap mx-20" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active mx-2">
+              <a class="nav-link" href="/" target="_blank">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="/procedure">Procedure</a>
+            </li>
+            <li class="nav-item mx-2">
+              <ul class="dropdown mx-2">
+                <li class="dropbtn">Categories</li>
+                <li class="dropdown-content">
+                  <a href="/boys">Boys</a>
+                  <a href="/girls">Girls</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="/Aboutus">About us</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item mx-2 log">
+              <a href="/login" class="nav-link">Login</a>
+              <a href="/signUp" class="nav-link">SignUp</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+      <div class="contain">
 <div class="container">
     <h1 class="tittle">
         Sign Up
     </h1>
-    <form action="#">
+    <form action="/signup" method="post">
         <div class="upper-details">
             <div class="input-box name">
                 <div class="name-wrap">
                     <span class="details">First Name</span>
-                    <input type="text" placeholder="Enter your First Name" required>
+                    <input type="text" name="firstname" placeholder="Enter your First Name" required>
                 </div>
                 <div class="name-wrap">
                     <span class="details">Middle Name</span>
-                    <input type="text" placeholder="Enter your Middle Name">
+                    <input type="text" name="middlename" placeholder="Enter your Middle Name">
                 </div>
                 <div class="name-wrap">
                     <span class="details">Last Name</span>
-                    <input type="text" placeholder="Enter your Last Name" required>
+                    <input type="text"  name="lastname" placeholder="Enter your Last Name" required>
                 </div>
             </div>
             <div class="input-box">
                 <span class="details">Email</span>
-                <input type="email" placeholder="Enter your email" required>
+                <input type="email" name="email" placeholder="Enter your email" required>
             </div>
             <div class="input-box">
                 <span class="details">Phone Number</span>
-                <input type="number" placeholder="Enter your number" required>
+                <input type="text" name="phone" placeholder="Enter your number" required>
             </div>
             <div class="input-box">
                 <span class="details">Password</span> 
-                <input type="text" placeholder="Enter your password" required>
+                <input type="text" name="password"  placeholder="Enter your password" required>
             </div>
             <div class="input-box">
                 <span class="details">Confirm Password</span>
@@ -145,5 +302,49 @@
     </form>
 
  </div>
+</div>
+<hr style="height:1.5px;border-width:0;color:gray;background-color:gray">
+
+<div class="footer">
+  <div class="ft-left">
+    <p class="ft-heading">Our Topics</p>
+    <div class="ft-left-content">
+      <div class="ft-left-content-lt">
+        <a href="" class="ft-text adoption">Adoption</a>
+        <a href="" class="ft-text appeals">Appeals</a>
+        <a href="" class="ft-text archive">Archive</a>
+        <a href="" class="ft-text avoid-scams">Avoid Scams</a>
+        <a href="" class="ft-text citixenship">Citizenship</a>
+      </div>
+      <div class="ft-left-content-rt">
+        <a href="" class="ft-text family">Family</a>
+        <a href="" class="ft-text file-online">File Online</a>
+        <a href="" class="ft-text green-card">Green Card</a>
+        <a href="" class="ft-text history">History</a>
+        <a href="" class="ft-text humanitarian">Humanitarian</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="ft-mid">
+    <p class="ft-heading">Policies</p>
+    <div class="ft-mid-content">
+      <a href="" class="ft-text social-media-policy">Social Media Policy</a>
+      <a href="" class="ft-text no-fear-act">No FEAR Act</a>
+    </div>
+  </div>
+
+  <div class="ft-right">
+    <p class="ft-heading">Details</p>
+    <div class="ft-right-content">
+      <a href="/" class="ft-text ">Home</a>
+      <a href="/procedure" class="ft-text ">procedure</a>
+      <a href="/boys" class="ft-text ">Category</a>
+      <a href="/Aboutus" class="ft-text ">About us</a>
+      <a href="/contact" class="ft-text ">Contact</a>
+    </div>
+  </div>
+
+</div>
 </body>
 </html>

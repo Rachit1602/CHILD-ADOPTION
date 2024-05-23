@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+        .roadmap {
+          position: relative;
+          margin: 2rem 0;
+        }
+        .step {
+          background: #f9f9f9;
+          width: 46%;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          padding: 16px;
+          margin-bottom: 20px;
+          box-shadow: 2px 2px 12px #aaa;
+          position: absolute;
+        }
+        .one{
+            left:1%;
+        }
+        .two{
+            right:1%;
+            top:14rem
+        }
+        .three{
+            left:1%;
+            top:28rem
+        }
+        .four{
+            right:1%;
+            top:42rem
+        }
+        .five{
+            left:1%;
+            top:56rem
+        }
+        .six{
+            right:1%;
+            top:70rem
+        }
+        .seven{
+            left:1%;
+            top:84rem
+        }
+        .eight{
+            right:1%;
+            top:98rem
+        }
+        .nine{
+            left:1%;
+            top:112rem
+        }
+        .ten{
+            right:1%;
+            top:126rem
+        }
+        .step h2 {
+          margin-top: 0;
+          color: #2c3e50;
+        }
+        .step ul {
+          padding-left: 20px;
+        }
+      </style>
+</head>
+<body>
+    <%- include('includes/navigation.ejs') %>
+    <div class="roadmap">
+        <div class="step one">
+          <h2>1. Decide on the Type of Adoption</h2>
+          <ul>
+            <li><strong>Domestic Adoption:</strong> Adopting a child from your own country.</li>
+            <li><strong>International Adoption:</strong> Adopting a child from another country.</li>
+            <li><strong>Foster Care Adoption:</strong> Adopting a child from the foster care system.</li>
+            <li><strong>Private Adoption:</strong> Arranged through an agency or directly with birth parents.</li>
+          </ul>
+        </div>
+        <div class="step two">
+          <h2>2. Research and Choose an Adoption Agency</h2>
+          <ul>
+            <li><strong>Find a Licensed Adoption Agency:</strong> Ensure they are reputable and accredited.</li>
+            <li><strong>Attend Orientation Sessions:</strong> Many agencies offer information sessions about the adoption process.</li>
+          </ul>
+        </div>
+        <div class="step three">
+          <h2>3. Complete an Application</h2>
+          <ul>
+            <li><strong>Submit Initial Application:</strong> Provide basic information about yourself and your interest in adoption.</li>
+            <li><strong>Pay Application Fees:</strong> Some agencies require a fee to process the application.</li>
+          </ul>
+        </div>
+        <div class="step four">
+          <h2>4. Attend Training and Preparation Classes</h2>
+          <ul>
+            <li><strong>Pre-Adoption Education:</strong> Many agencies require prospective parents to attend training sessions on adoption-related issues.</li>
+          </ul>
+        </div>
+        <div class="step five">
+          <h2>5. Home Study Process</h2>
+          <ul>
+            <li><strong>Home Visits:</strong> A social worker will visit your home to assess your living environment.</li>
+            <li><strong>Interviews:</strong> The social worker will conduct in-depth interviews with you and your family members.</li>
+            <li><strong>Background Checks:</strong> Criminal, medical, and financial background checks will be performed.</li>
+            <li><strong>References:</strong> Provide personal references who can vouch for your suitability as an adoptive parent.</li>
+          </ul>
+        </div>
+        <div class="step six">
+          <h2>6. Approval and Matching</h2>
+          <ul>
+            <li><strong>Home Study Report:</strong> Once approved, the agency will create a home study report summarizing the findings.</li>
+            <li><strong>Matching Process:</strong> The agency will work to match you with a child who fits your preferences and capabilities.</li>
+            <li><strong>Meeting the Child:</strong> In some cases, there will be an initial meeting to ensure compatibility.</li>
+          </ul>
+        </div>
+        <div class="step seven">
+          <h2>7. Legal Proceedings</h2>
+          <ul>
+            <li><strong>Placement:</strong> Once a match is made, the child is placed in your home for a trial period (varies by jurisdiction).</li>
+            <li><strong>Post-Placement Visits:</strong> The social worker will conduct follow-up visits to ensure the child's well-being.</li>
+            <li><strong>Finalization Hearing:</strong> After the trial period, a court hearing will be held to finalize the adoption. You will need to present the home study report and other required documents.</li>
+            <li><strong>Adoption Decree:</strong> If the court is satisfied, an adoption decree will be issued, legally recognizing you as the child's parent.</li>
+          </ul>
+        </div>
+        <div class="step eight">
+          <h2>8. Post-Adoption Support</h2>
+          <ul>
+            <li><strong>Counseling and Support Groups:</strong> Many agencies offer post-adoption support to help families adjust.</li>
+            <li><strong>Continued Education:</strong> Ongoing training and resources may be available to assist with any challenges.</li>
+          </ul>
+        </div>
+        <div class="step nine">
+          <h2>International Adoption Specifics</h2>
+          <ul>
+            <li><strong>Hague Convention Compliance:</strong> Ensure your adoption complies with the Hague Adoption Convention, which sets international standards.</li>
+            <li><strong>Immigration Requirements:</strong> Complete necessary immigration procedures to bring the child to your home country.</li>
+            <li><strong>Translation of Documents:</strong> Translate all required documents into the appropriate language.</li>
+          </ul>
+        </div>
+        <div class="step ten">
+          <h2>Additional Considerations</h2>
+          <ul>
+            <li><strong>Adoption Costs:</strong> Be prepared for various costs, including agency fees, legal fees, travel expenses (for international adoptions), and other miscellaneous expenses.</li>
+            <li><strong>Emotional Readiness:</strong> Adoption can be a lengthy and emotional process. Ensure you have a strong support system in place.</li>
+          </ul>
+        </div>
+      </div>
+</body>
+</html>
