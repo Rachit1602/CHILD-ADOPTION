@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const MONGODB_CONNECT_URI= "mongodb+srv://rachit279narang:7x366KXcX2xFm1uh@childstore.379ua2x.mongodb.net/?retryWrites=true&w=majority&appName=Childstore"
-mongoose.connect(MONGODB_CONNECT_URI).then(()=>{
+const uri=process.env.MONGODB_CONNECT_URI||MONGODB_CONNECT_URI;
+mongoose.connect(uri).then(()=>{
     console.log("Connected to MongoDB");
 }).catch((err)=>{
     console.log("Error connecting to MongoDB"+err.message);
