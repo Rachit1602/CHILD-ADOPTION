@@ -157,8 +157,8 @@ app.post('/contact',async (req,res)=>{
 app.get('/procedure',(req,res)=>{
     res.render('procedure');
 })
-
-app.listen(3000,()=>{
+const port=process.env.PORT||3000;
+app.listen(port,()=>{
     console.log("port connected");
 });
  
